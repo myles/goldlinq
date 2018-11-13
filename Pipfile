@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+goldlinq = {path = "."}
+
+[dev-packages]
+black = "*"
+pytest = "*"
+webtest = "*"
+factory-boy = "*"
+pytest-flask = "*"
+twine = "*"
+pytest-bdd = "*"
+tox = "*"
+pylint = "*"
+sphinx = "*"
+sphinxcontrib-napoleon = "*"
+
+[requires]
+python_version = "3.7"

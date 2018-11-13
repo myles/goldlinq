@@ -1,0 +1,3 @@
+include README.md LICENSE
+recursive-include photo_gallery/templates *
+recursive-include photo_gallery/static *
