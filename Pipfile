@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 goldlinq = {path = "."}
+pytest-cov = "*"
 
 [dev-packages]
 black = "*"

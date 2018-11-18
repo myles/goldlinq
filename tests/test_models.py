@@ -3,6 +3,7 @@ from pathlib import Path
 import pytest
 
 from goldlinq.models import Photo, Gallery
+from goldlinq.models import microformats2
 
 FIXTURE_PATH = Path(__file__).parents[0].joinpath("fixtures")
 
@@ -40,11 +41,19 @@ def test_photo_initialisation(photo):
 
 
 def test_photo_list_initialisation(photo_list):
-    assert len(photo_list) == 2
+    assert len(photo_list) == 3
 
 
 def test_photo_name(photo):
     assert "Photo One" == photo.name
+
+
+def test_photo_gallery(photo):
+    assert isinstance(photo.gallery, Gallery)
+
+
+def test_photo_location(photo):
+    assert isinstance(photo.location, microformats2.HGeo)
 
 
 def test_photo_list_path(photo_list):
@@ -54,11 +63,15 @@ def test_photo_list_path(photo_list):
 def test_photo_list_order_by(photo_list):
     photo_list.order_by()
 
-    assert photo_list.names == ["Photo Two", "Photo One"]
+    assert photo_list.names == ["Photo Three", "Photo Two", "Photo One"]
 
 
 def test_gallery_initialisation(gallery):
     assert gallery.path == GALLERY_PATH
+
+
+def test_gallery_name(gallery):
+    assert gallery.name == "A New Millennium"
 
 
 def test_gallery_list_initialisation(gallery_list):
@@ -66,4 +79,4 @@ def test_gallery_list_initialisation(gallery_list):
 
 
 def test_gallery_photos(gallery):
-    assert len(gallery.list_photo()) == 2
+    assert len(gallery.list_photo()) == 3

@@ -1,2 +1,8 @@
 name = "Photo One"
 dt_taken = 2000-01-01T00:00:00Z
+photo = "https://unsplash.com/photos/JQGEj_ayWIg/download?force=true"
+
+[location]
+type = "h-geo"
+latitude = 43.7
+longitude = -79.4
