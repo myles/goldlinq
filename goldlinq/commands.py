@@ -25,9 +25,9 @@ def freeze():
 
 
 @click.command()
-@click.option('--published', '-p', default=datetime.datetime.now().isoformat())
-@click.option('--slug', '-s', default='untitled')
-@click.option('--name', '-n')
+@click.option("--published", "-p", default=datetime.datetime.now().isoformat())
+@click.option("--slug", "-s", default="untitled")
+@click.option("--name", "-n")
 @with_appcontext
 def create_gallery(published, slug, name=None):
     """Create a new gallery."""
@@ -44,16 +44,14 @@ def create_gallery(published, slug, name=None):
 
     meta_file_path = gallery_path.joinpath("meta.toml")
 
-    meta_defaults = {
-        'dt_published': published,
-    }
+    meta_defaults = {"dt_published": published}
 
     if name:
-        meta_defaults['name'] = name
+        meta_defaults["name"] = name
 
     meta_file_contents = click.edit(toml.dumps(meta_defaults))
 
-    with meta_file_path.open('w') as meta_file_obj:
+    with meta_file_path.open("w") as meta_file_obj:
         meta_file_obj.write(meta_file_contents)
 
 

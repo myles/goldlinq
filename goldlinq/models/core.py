@@ -76,7 +76,7 @@ class Gallery(Model):
 
     @property
     def url(self):
-        return url_for('views.gallery_detail', gallery_slug=self.slug)
+        return url_for("views.gallery_detail", gallery_slug=self.slug)
 
     @classmethod
     def parse(cls, path):
