@@ -56,6 +56,10 @@ def test_photo_location(photo):
     assert isinstance(photo.location, microformats2.HGeo)
 
 
+def test_photo_to_h_object(photo):
+    assert photo.to_h_object()['properties']['name'] == ['Photo One',]
+
+
 def test_photo_list_path(photo_list):
     assert sorted(photo_list.paths) == sorted(PHOTO_LIST_PATH.glob("*.toml"))
 

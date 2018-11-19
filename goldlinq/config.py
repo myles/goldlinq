@@ -18,7 +18,7 @@ class Config:
 
     STATIC_PATH = ROOT_PATH.joinpath("static")
 
-    GALLERIES_PATH = ROOT_PATH.joinpath("data")
+    GALLERIES_PATH = ROOT_PATH.joinpath("tests/fixtures")
 
     # Frozen-Flask Config
     # FREEZER_STATIC_IGNORE = ()

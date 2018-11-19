@@ -1,3 +1,4 @@
+import inspect
 from pathlib import Path
 
 from .microformats2 import HAdr, HCard, HEvent, HGeo
@@ -79,3 +80,20 @@ class Model:
     @staticmethod
     def parse_event(data):
         return HEvent.parse(data)
+
+    def to_h_object(self):
+        h_object = {
+            'type': self.h_type,
+            'properties': {}
+        }
+
+        for key, value in self.__dict__.items():
+            if key in ['path']:
+                continue
+
+            if isinstance(value, (HAdr, HCard, HEvent, HGeo)):
+                h_object['properties'][key] = [value.to_h_object(),]
+            else:
+                h_object['properties'][key] = [value,]
+
+        return h_object

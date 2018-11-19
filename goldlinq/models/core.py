@@ -25,6 +25,8 @@ class Photo(Model):
         full path to the photo's TOML file.
     """
 
+    h_type = "h-entry"
+
     @property
     def gallery(self):
         return Gallery.parse(self.path.parents[1])
@@ -73,6 +75,8 @@ class Gallery(Model):
     path : Path
         full path to the gallery's directory.
     """
+
+    h_type = "h-feed"
 
     @property
     def url(self):
@@ -135,3 +139,10 @@ class Gallery(Model):
 
     def get_photo(self, photo):
         return Photo.parse(self.path.joinpath("photos/", photo))
+
+    def to_h_object(self):
+        h_object = super(Gallery, self).to_h_object()
+
+        h_object['items'] = [x.to_h_object() for x in self.list_photo()]
+
+        return h_object
