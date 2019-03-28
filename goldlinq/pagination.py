@@ -159,7 +159,7 @@ class Page(collections.Sequence):
 
     @property
     def has_other_pages(self):
-        return self.has_previous() or self.has_next()
+        return self.has_previous or self.has_next
 
     @property
     def next_page_number(self):

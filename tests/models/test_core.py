@@ -2,10 +2,10 @@ from pathlib import Path
 
 import pytest
 
-from goldlinq.models import Photo, Gallery
 from goldlinq.models import microformats2
+from goldlinq.models.core import Photo, Gallery
 
-FIXTURE_PATH = Path(__file__).parents[0].joinpath("fixtures")
+FIXTURE_PATH = Path(__file__).parents[1].joinpath("fixtures")
 
 PHOTO_PATH = FIXTURE_PATH.joinpath(
     "2000-01-01-new-years-day/photos/IMG-001.toml"
@@ -57,7 +57,7 @@ def test_photo_location(photo):
 
 
 def test_photo_to_h_object(photo):
-    assert photo.to_h_object()['properties']['name'] == ['Photo One',]
+    assert photo.to_h_object()["properties"]["name"] == ["Photo One"]
 
 
 def test_photo_list_path(photo_list):

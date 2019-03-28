@@ -143,6 +143,6 @@ class Gallery(Model):
     def to_h_object(self):
         h_object = super(Gallery, self).to_h_object()
 
-        h_object['items'] = [x.to_h_object() for x in self.list_photo()]
+        h_object["items"] = [x.to_h_object() for x in self.list_photo()]
 
         return h_object

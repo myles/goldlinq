@@ -2,14 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbd6f794-bc1e-4394-b230-1707e218c121" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.coveragerc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goldlinq/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/models/test_meta.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/models/test_microformats2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test___about__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_pagination.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/myles.photo-www.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myles.photo-www.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goldlinq/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/goldlinq/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goldlinq/__version__.py" beforeDir="false" afterPath="$PROJECT_DIR$/goldlinq/__about__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/goldlinq/models/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/goldlinq/models/core.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/goldlinq/models/meta.py" beforeDir="false" afterPath="$PROJECT_DIR$/goldlinq/models/meta.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/goldlinq/models/microformats2.py" beforeDir="false" afterPath="$PROJECT_DIR$/goldlinq/models/microformats2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goldlinq/pagination.py" beforeDir="false" afterPath="$PROJECT_DIR$/goldlinq/pagination.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/goldlinq/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/goldlinq/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/models/test_core.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,132 +29,49 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_models_test_gallery_name.coverage" NAME="pytest for test_models.test_gallery_name Coverage Results" MODIFIED="1542295727545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_models_test_gallery_url.coverage" NAME="pytest for test_models.test_gallery_url Coverage Results" MODIFIED="1542296445996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_models_test_photo_list_initialisation.coverage" NAME="pytest for test_models.test_photo_list_initialisation Coverage Results" MODIFIED="1542571433761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_models_test_gallery_initialisation.coverage" NAME="pytest for test_models.test_gallery_initialisation Coverage Results" MODIFIED="1542140282166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_models_test_photo_to_h_object.coverage" NAME="pytest for test_models.test_photo_to_h_object Coverage Results" MODIFIED="1542665971927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_meta_test_result_set_paths.coverage" NAME="pytest for test_meta.test_result_set_paths Coverage Results" MODIFIED="1553736265509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/models" />
+    <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_meta_test_result_set_order_by.coverage" NAME="pytest for test_meta.test_result_set_order_by Coverage Results" MODIFIED="1553736690571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/models" />
     <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_models_test_gallery_list_initialisation.coverage" NAME="pytest for test_models.test_gallery_list_initialisation Coverage Results" MODIFIED="1542140289882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_models_test_photo_location.coverage" NAME="pytest for test_models.test_photo_location Coverage Results" MODIFIED="1542577734646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_models_test_photo_gallery.coverage" NAME="pytest for test_models.test_photo_gallery Coverage Results" MODIFIED="1542571444447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_models_test_photo_name.coverage" NAME="pytest for test_models.test_photo_name Coverage Results" MODIFIED="1542140142724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_models_test_gallery_initialisation.coverage" NAME="pytest for test_models.test_gallery_initialisation Coverage Results" MODIFIED="1542140282166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_microformats2_test_hgeo_repr.coverage" NAME="pytest for test_microformats2.test_hgeo_repr Coverage Results" MODIFIED="1553735429839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/models" />
+    <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_meta_test_result_set_names.coverage" NAME="pytest for test_meta.test_result_set_names Coverage Results" MODIFIED="1553736193616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/models" />
+    <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_meta_test_model___str__.coverage" NAME="pytest for test_meta.test_model___str__ Coverage Results" MODIFIED="1553736563030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/models" />
+    <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_models_test_photo_to_h_object.coverage" NAME="pytest for test_models.test_photo_to_h_object Coverage Results" MODIFIED="1542665971927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_models_test_gallery_photos.coverage" NAME="pytest for test_models.test_gallery_photos Coverage Results" MODIFIED="1542140366155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="910942848">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.6" value="2" />
-          <entry key="project.opened" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="cfg" value="1" />
-          <entry key="ini" value="1" />
-          <entry key="md" value="1" />
-          <entry key="py" value="42" />
-          <entry key="toml" value="15" />
-          <entry key="yml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Ini" value="2" />
-          <entry key="Markdown" value="1" />
-          <entry key="Python" value="42" />
-          <entry key="TOML file" value="15" />
-          <entry key="YAML" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="Python Console" value="134" />
-          <entry key="dummy" value="30" />
-          <entry key="ini" value="160" />
-          <entry key="py" value="7326" />
-          <entry key="toml" value="282" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Ini" value="160" />
-          <entry key="PLAIN_TEXT" value="30" />
-          <entry key="Python" value="7460" />
-          <entry key="TOML file" value="282" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.vcs.git.usages" />
-      <usages-collector id="statistics.js.language.service.starts" />
-    </session>
+    <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_models_test_photo_gallery.coverage" NAME="pytest for test_models.test_photo_gallery Coverage Results" MODIFIED="1542571444447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_models_test_photo_location.coverage" NAME="pytest for test_models.test_photo_location Coverage Results" MODIFIED="1542577734646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test___about___test___version__.coverage" NAME="pytest for test___about__.test___version__ Coverage Results" MODIFIED="1553737254961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_models_test_gallery_name.coverage" NAME="pytest for test_models.test_gallery_name Coverage Results" MODIFIED="1542295727545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_models_test_photo_list_initialisation.coverage" NAME="pytest for test_models.test_photo_list_initialisation Coverage Results" MODIFIED="1542571433761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_microformats2_test_to_h_object.coverage" NAME="pytest for test_microformats2.test_to_h_object Coverage Results" MODIFIED="1553735588106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/models" />
+    <SUITE FILE_PATH="coverage/myles_photo_www$pytest_for_test_models_test_photo_name.coverage" NAME="pytest for test_models.test_photo_name Coverage Results" MODIFIED="1542140142724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/goldlinq/commands.py">
+        <entry file="file://$PROJECT_DIR$/tests/test___about__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
-              <folding>
-                <element signature="e#46#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/goldlinq/models/meta.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="96" column="54" selection-start-line="96" selection-start-column="54" selection-end-line="96" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/goldlinq/models/core.py">
+        <entry file="file://$PROJECT_DIR$/tests/test_pagination.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
-              <folding>
-                <element signature="e#27#42#0" expanded="true" />
-                <marker date="1542666615000" expanded="true" signature="487:544" ph="..." />
-              </folding>
+            <state relative-caret-position="18">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/goldlinq/models/microformats2.py">
+        <entry file="file://$PROJECT_DIR$/goldlinq/__about__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/goldlinq/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+            <state relative-caret-position="54">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -152,28 +80,7 @@
         <entry file="file://$PROJECT_DIR$/goldlinq/pagination.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret selection-end-line="2" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/goldlinq/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
-              <folding>
-                <element signature="e#0#66#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/goldlinq/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+              <caret column="18" selection-start-column="7" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -193,6 +100,8 @@
       <find>Location</find>
       <find>GALLERIES_PATH</find>
       <find>PER_PAGE</find>
+      <find>ResultSet</find>
+      <find>collections</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -214,22 +123,27 @@
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/tests/test_models.py" />
         <option value="$PROJECT_DIR$/goldlinq/config.py" />
-        <option value="$PROJECT_DIR$/goldlinq/views.py" />
-        <option value="$PROJECT_DIR$/goldlinq/models/microformats2.py" />
-        <option value="$PROJECT_DIR$/goldlinq/models/meta.py" />
         <option value="$PROJECT_DIR$/goldlinq/models/core.py" />
+        <option value="$PROJECT_DIR$/goldlinq/pagination.py" />
+        <option value="$PROJECT_DIR$/goldlinq/templates/base.html" />
+        <option value="$PROJECT_DIR$/goldlinq/models/microformats2.py" />
+        <option value="$PROJECT_DIR$/goldlinq/views.py" />
+        <option value="$PROJECT_DIR$/Pipfile" />
+        <option value="$PROJECT_DIR$/goldlinq/models/meta.py" />
+        <option value="$PROJECT_DIR$/tests/models/test_microformats2.py" />
+        <option value="$PROJECT_DIR$/tests/models/test_core.py" />
+        <option value="$PROJECT_DIR$/tests/models/test_meta.py" />
+        <option value="$PROJECT_DIR$/.coveragerc" />
+        <option value="$PROJECT_DIR$/tests/test___version__.py" />
+        <option value="$PROJECT_DIR$/tests/test___about__.py" />
+        <option value="$PROJECT_DIR$/tests/test_pagination.py" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="837" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -257,28 +171,13 @@
             <path>
               <item name="myles.photo-www" type="b2602c69:ProjectViewProjectNode" />
               <item name="myles.photo-www" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="goldlinq" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myles.photo-www" type="b2602c69:ProjectViewProjectNode" />
               <item name="myles.photo-www" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myles.photo-www" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myles.photo-www" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
-              <item name="2000-01-01-new-years-day" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myles.photo-www" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myles.photo-www" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
-              <item name="2000-01-01-new-years-day" type="462c0819:PsiDirectoryNode" />
-              <item name="photos" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -291,9 +190,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/models" />
       <recent name="$PROJECT_DIR$/goldlinq/models" />
       <recent name="$PROJECT_DIR$/tests/_fixtures/2000-01-01-new-years-days" />
     </key>
@@ -310,8 +211,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_models.test_photo_to_h_object">
-    <configuration name="pytest for test_models.test_gallery_url" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for test___about__.test___version__">
+    <configuration name="pytest for test___about__.test___version__" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="myles.photo-www" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -323,88 +224,88 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_models.test_gallery_url&quot;" />
+      <option name="_new_target" value="&quot;test___about__.test___version__&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_models.test_photo_gallery" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_meta.test_model___str__" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="myles.photo-www" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/models" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_models.test_photo_gallery&quot;" />
+      <option name="_new_target" value="&quot;test_meta.test_model___str__&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_models.test_photo_list_initialisation" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_meta.test_result_set_names" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="myles.photo-www" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/models" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_models.test_photo_list_initialisation&quot;" />
+      <option name="_new_target" value="&quot;test_meta.test_result_set_names&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_models.test_photo_location" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_meta.test_result_set_order_by" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="myles.photo-www" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/models" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_models.test_photo_location&quot;" />
+      <option name="_new_target" value="&quot;test_meta.test_result_set_order_by&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_models.test_photo_to_h_object" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_meta.test_result_set_paths" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="myles.photo-www" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/models" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_models.test_photo_to_h_object&quot;" />
+      <option name="_new_target" value="&quot;test_meta.test_result_set_paths&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.pytest for test_models.test_gallery_url" />
-      <item itemvalue="Python tests.pytest for test_models.test_photo_gallery" />
-      <item itemvalue="Python tests.pytest for test_models.test_photo_list_initialisation" />
-      <item itemvalue="Python tests.pytest for test_models.test_photo_location" />
-      <item itemvalue="Python tests.pytest for test_models.test_photo_to_h_object" />
+      <item itemvalue="Python tests.pytest for test_meta.test_result_set_paths" />
+      <item itemvalue="Python tests.pytest for test_meta.test_result_set_names" />
+      <item itemvalue="Python tests.pytest for test_meta.test_result_set_order_by" />
+      <item itemvalue="Python tests.pytest for test_meta.test_model___str__" />
+      <item itemvalue="Python tests.pytest for test___about__.test___version__" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_models.test_photo_to_h_object" />
-        <item itemvalue="Python tests.pytest for test_models.test_photo_location" />
-        <item itemvalue="Python tests.pytest for test_models.test_photo_gallery" />
-        <item itemvalue="Python tests.pytest for test_models.test_photo_list_initialisation" />
-        <item itemvalue="Python tests.pytest for test_models.test_gallery_url" />
+        <item itemvalue="Python tests.pytest for test___about__.test___version__" />
+        <item itemvalue="Python tests.pytest for test_meta.test_result_set_order_by" />
+        <item itemvalue="Python tests.pytest for test_meta.test_model___str__" />
+        <item itemvalue="Python tests.pytest for test_meta.test_result_set_paths" />
+        <item itemvalue="Python tests.pytest for test_meta.test_result_set_names" />
       </list>
     </recent_temporary>
   </component>
@@ -418,47 +319,53 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542137649270</updated>
+      <workItem from="1542824439173" duration="44000" />
+      <workItem from="1542824512472" duration="168000" />
+      <workItem from="1553734172265" duration="3185000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_models_test_photo_gallery - 2018.11.18 at 15h 04m 05s.xml">
-      <configuration name="pytest for test_models.test_photo_gallery" configurationId="tests" />
+    <history-entry file="pytest_for_test_meta_test_result_set_paths - 2019.03.27 at 21h 24m 26s.xml">
+      <configuration name="pytest for test_meta.test_result_set_paths" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_models_test_photo_location - 2018.11.18 at 16h 48m 33s.xml">
-      <configuration name="pytest for test_models.test_photo_location" configurationId="tests" />
+    <history-entry file="pytest_for_test_meta_test_result_set_order_by - 2019.03.27 at 21h 25m 33s.xml">
+      <configuration name="pytest for test_meta.test_result_set_order_by" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_models_test_photo_location - 2018.11.18 at 16h 48m 55s.xml">
-      <configuration name="pytest for test_models.test_photo_location" configurationId="tests" />
+    <history-entry file="pytest_for_test_meta_test_result_set_order_by - 2019.03.27 at 21h 26m 00s.xml">
+      <configuration name="pytest for test_meta.test_result_set_order_by" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_models_test_photo_to_h_object - 2018.11.19 at 17h 09m 56s.xml">
-      <configuration name="pytest for test_models.test_photo_to_h_object" configurationId="tests" />
+    <history-entry file="pytest_for_test_meta_test_result_set_order_by - 2019.03.27 at 21h 26m 12s.xml">
+      <configuration name="pytest for test_meta.test_result_set_order_by" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_models_test_photo_to_h_object - 2018.11.19 at 17h 11m 42s.xml">
-      <configuration name="pytest for test_models.test_photo_to_h_object" configurationId="tests" />
+    <history-entry file="pytest_for_test_meta_test_result_set_order_by - 2019.03.27 at 21h 26m 37s.xml">
+      <configuration name="pytest for test_meta.test_result_set_order_by" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_models_test_photo_to_h_object - 2018.11.19 at 17h 15m 00s.xml">
-      <configuration name="pytest for test_models.test_photo_to_h_object" configurationId="tests" />
+    <history-entry file="pytest_for_test_meta_test_result_set_order_by - 2019.03.27 at 21h 26m 47s.xml">
+      <configuration name="pytest for test_meta.test_result_set_order_by" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_models_test_photo_to_h_object - 2018.11.19 at 17h 15m 28s.xml">
-      <configuration name="pytest for test_models.test_photo_to_h_object" configurationId="tests" />
+    <history-entry file="pytest_for_test_meta_test_model___str__ - 2019.03.27 at 21h 29m 23s.xml">
+      <configuration name="pytest for test_meta.test_model___str__" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_models_test_photo_to_h_object - 2018.11.19 at 17h 18m 09s.xml">
-      <configuration name="pytest for test_models.test_photo_to_h_object" configurationId="tests" />
+    <history-entry file="pytest_for_test_meta_test_result_set_order_by - 2019.03.27 at 21h 31m 12s.xml">
+      <configuration name="pytest for test_meta.test_result_set_order_by" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_models_test_photo_to_h_object - 2018.11.19 at 17h 18m 46s.xml">
-      <configuration name="pytest for test_models.test_photo_to_h_object" configurationId="tests" />
+    <history-entry file="pytest_for_test_meta_test_result_set_order_by - 2019.03.27 at 21h 31m 31s.xml">
+      <configuration name="pytest for test_meta.test_result_set_order_by" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_models_test_photo_to_h_object - 2018.11.19 at 17h 19m 33s.xml">
-      <configuration name="pytest for test_models.test_photo_to_h_object" configurationId="tests" />
+    <history-entry file="pytest_for_test___about___test___version__ - 2019.03.27 at 21h 40m 55s.xml">
+      <configuration name="pytest for test___about__.test___version__" configurationId="tests" />
     </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49597856" visible="true" weight="0.27038628" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49597856" visible="true" weight="0.2811159" />
       <window_info id="Structure" order="2" sideWeight="0.50402147" side_tool="true" weight="0.24964234" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.3297587" />
@@ -467,8 +374,8 @@
       <window_info anchor="bottom" id="Python Console" order="4" weight="0.3297587" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Find" order="7" />
-      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.32771084" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.32771084" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -481,12 +388,34 @@
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49597856" visible="true" weight="0.2811159" />
+      <window_info id="Structure" order="2" sideWeight="0.50402147" side_tool="true" weight="0.24964234" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3297587" />
+      <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="4" weight="0.3297587" />
+      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.32771084" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="right" id="R Graphics" order="0" />
+      <window_info anchor="right" id="R Packages" order="1" />
+      <window_info anchor="right" id="SciView" order="2" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-324959778/builtins.py">
@@ -499,13 +428,6 @@
     <entry file="file://$PROJECT_DIR$/tests/_fixtures/2000-01-01-new-years-days/photos/02.toml" />
     <entry file="file://$PROJECT_DIR$/tests/_fixtures/2000-01-01-new-years-days/meta.toml" />
     <entry file="file://$PROJECT_DIR$/tests/_fixtures/2000-01-01-new-years-days/photos/01.toml" />
-    <entry file="file://$PROJECT_DIR$/autoapp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -523,27 +445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/fixtures/2000-01-01-new-years-day/photos/IMG-001.toml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/fixtures/2000-01-01-new-years-day/photos/IMG-002.toml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/fixtures/2000-01-01-new-years-day/photos/IMG-003.toml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -571,51 +472,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goldlinq/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/goldlinq/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/goldlinq/__version__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goldlinq/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/goldlinq/commands.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
+        <state relative-caret-position="954">
           <caret line="59" selection-start-line="59" selection-end-line="59" />
           <folding>
             <element signature="e#46#61#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goldlinq/pagination.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -626,43 +492,176 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/goldlinq/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goldlinq/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autoapp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#62#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/fixtures/2000-01-01-new-years-day/photos/IMG-003.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/fixtures/2000-01-01-new-years-day/photos/IMG-002.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/fixtures/2000-01-01-new-years-day/photos/IMG-001.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/goldlinq/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+        <state relative-caret-position="936">
+          <caret line="52" column="62" selection-start-line="52" selection-start-column="62" selection-end-line="52" selection-end-column="62" />
           <folding>
             <element signature="e#0#66#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goldlinq/models/microformats2.py">
+    <entry file="file://$PROJECT_DIR$/goldlinq/models/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="54">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goldlinq/models/meta.py">
+    <entry file="file://$PROJECT_DIR$/tests/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pipfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="96" column="54" selection-start-line="96" selection-start-column="54" selection-end-line="96" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="378">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goldlinq/models/microformats2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/goldlinq/models/core.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
+        <state relative-caret-position="-254">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
           <folding>
             <element signature="e#27#42#0" expanded="true" />
-            <marker date="1542666615000" expanded="true" signature="487:544" ph="..." />
+            <marker date="1553734516000" expanded="true" signature="487:544" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/goldlinq/models/meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/models/test_microformats2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/models/test_core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/models/test_meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.coveragerc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goldlinq/__about__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test___about__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goldlinq/pagination.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_pagination.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

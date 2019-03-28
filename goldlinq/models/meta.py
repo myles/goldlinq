@@ -1,4 +1,3 @@
-import inspect
 from pathlib import Path
 
 from .microformats2 import HAdr, HCard, HEvent, HGeo
@@ -33,17 +32,20 @@ class ResultSet(list):
         direction : { 'descending', 'ascending' }
             what direction do you want to order by
         """
-        if direction.startswith("desc"):
+        if not direction:
+            reverse = False
+        elif direction.startswith("desc"):
             reverse = True
         elif direction.startswith("asc"):
-            reverse = False
-        else:
             reverse = False
 
         return self.sort(key=lambda x: getattr(x, field_name), reverse=reverse)
 
 
 class Model:
+    name = None
+    h_type = None
+
     def __init__(self, path):
         super(Model, self).__init__()
 
@@ -82,18 +84,15 @@ class Model:
         return HEvent.parse(data)
 
     def to_h_object(self):
-        h_object = {
-            'type': self.h_type,
-            'properties': {}
-        }
+        h_object = {"type": self.h_type, "properties": {}}
 
         for key, value in self.__dict__.items():
-            if key in ['path']:
+            if key in ["path"]:
                 continue
 
             if isinstance(value, (HAdr, HCard, HEvent, HGeo)):
-                h_object['properties'][key] = [value.to_h_object(),]
+                h_object["properties"][key] = [value.to_h_object()]
             else:
-                h_object['properties'][key] = [value,]
+                h_object["properties"][key] = [value]
 
         return h_object
