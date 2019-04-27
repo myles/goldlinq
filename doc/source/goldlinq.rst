@@ -1,6 +1,13 @@
 goldlinq package
 ================
 
+Subpackages
+-----------
+
+.. toctree::
+
+    goldlinq.models
+
 Submodules
 ----------
 
@@ -24,14 +31,6 @@ goldlinq.config module
 ----------------------
 
 .. automodule:: goldlinq.config
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-goldlinq.models module
-----------------------
-
-.. automodule:: goldlinq.models
     :members:
     :undoc-members:
     :show-inheritance:
