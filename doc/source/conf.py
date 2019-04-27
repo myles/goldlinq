@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = "Goldlinq"
-copyright = "2018, Myles Braithwaite"
+copyright = "2019, Myles Braithwaite"
 author = "Myles Braithwaite"
 
 # The short X.Y version
@@ -105,7 +105,7 @@ html_static_path = ["_static"]
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "Goldlinqdoc"
+htmlhelp_basename = "goldlinq-doc"
 
 
 # -- Options for LaTeX output ------------------------------------------------
