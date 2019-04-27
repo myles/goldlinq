@@ -1,3 +1,3 @@
-from .core import Photo, Gallery
+from .core import Gallery, Photo
 
 __all__ = ["Photo", "Gallery"]

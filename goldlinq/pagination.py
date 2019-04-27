@@ -128,7 +128,7 @@ class Paginator:
             )
 
 
-class Page(collections.Sequence):
+class Page(collections.abc.Sequence):
     def __init__(self, object_list, number, paginator):
         self.object_list = object_list
         self.number = number

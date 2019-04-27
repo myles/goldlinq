@@ -21,7 +21,9 @@ class ResultSet(list):
         return [item.name for item in self if hasattr(item, "name")]
 
     def order_by(
-        self, field_name: str = "dt_taken", direction: str = "descending"
+        self,
+        field_name: str = "dt_taken",
+        direction: str = "descending",
     ):
         """
         Order the results by a field.
@@ -37,10 +39,10 @@ class ResultSet(list):
         """
         reverse = False
 
-        if direction.startswith("desc"):
+        if isinstance(direction, str) and direction.lower().startswith("desc"):
             reverse = True
 
-        if direction.startswith("asc"):
+        if isinstance(direction, str) and direction.lower().startswith("asc"):
             reverse = False
 
         return self.sort(key=lambda x: getattr(x, field_name), reverse=reverse)
