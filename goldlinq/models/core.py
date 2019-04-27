@@ -4,7 +4,6 @@ import re
 from pathlib import Path
 
 import toml
-
 from flask import url_for
 
 from .meta import Model, ResultSet

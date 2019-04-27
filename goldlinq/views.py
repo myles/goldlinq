@@ -1,12 +1,9 @@
-from flask import Blueprint, render_template, current_app, jsonify
+from flask import Blueprint, current_app, jsonify, render_template
 
-from .pagination import Paginator
 from .models import Gallery
+from .pagination import Paginator
 
-BLUEPRINT = Blueprint(
-    "views",
-    __name__,
-)
+BLUEPRINT = Blueprint("views", __name__)
 
 
 @BLUEPRINT.route("/")

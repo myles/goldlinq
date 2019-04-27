@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 """Click commands."""
 import datetime
+
 import click
-
 import toml
-
 from flask import current_app
 from flask.cli import with_appcontext
 
