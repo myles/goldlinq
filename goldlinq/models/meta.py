@@ -21,9 +21,7 @@ class ResultSet(list):
         return [item.name for item in self if hasattr(item, "name")]
 
     def order_by(
-        self,
-        field_name: str = "dt_taken",
-        direction: str = "descending",
+        self, field_name: str = "dt_taken", direction: str = "descending"
     ):
         """
         Order the results by a field.

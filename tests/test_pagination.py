@@ -1,7 +1,13 @@
 import pytest
 
-from goldlinq.pagination import Paginator, Page, UnorderedObjectListWarning, \
-    InvalidPage, PageNotAnInteger, EmptyPage
+from goldlinq.pagination import (
+    EmptyPage,
+    InvalidPage,
+    Page,
+    PageNotAnInteger,
+    Paginator,
+    UnorderedObjectListWarning,
+)
 
 
 @pytest.fixture
@@ -56,4 +62,3 @@ def test_paginator_validate_number(paginator):
 
 def test_paginator_get_page(paginator, page):
     assert paginator.get_page(1).number == page.number
-
