@@ -96,7 +96,11 @@ setup(
     python_requires=REQUIRES_PYTHON,
     url=URL,
     packages=find_packages(exclude=("tests",)),
-    entry_points={"console_scripts": ["Goldlinq=goldlinq.commands:cli"]},
+    entry_points={
+        "console_scripts": [
+            "Goldlinq=goldlinq.commands:cli"
+        ]
+    },
     install_requires=REQUIRED,
     extras_require=EXTRAS,
     include_package_data=True,

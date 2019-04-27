@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
     <head>
-        <title>Goldlinq</title>
+        <title>{% block title %}{{ config.SITE_TITLE }}{% endblock %}</title>
     </head>
-    <body>
-        {% block body %}
-        {% endblock body %}
+    <body id="{% block body_id %}{% endblock %}"
+          class="{% block body_class %}{% endblock %}"
+    >
+        {% block block %}
+        {% endblock %}
     </body>
 </html>

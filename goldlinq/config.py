@@ -1,25 +1,34 @@
 # -*- coding: utf-8 -*-
 """Application configuration."""
+from os import environ
 from pathlib import Path
 
 
 class Config:
-    DEBUG = True
+    DEBUG = environ.get("DEBUG", True)
     SEND_FILE_MAX_AGE_DEFAULT = 0
 
-    PER_PAGE = 20
+    PER_PAGE = environ.get("PRE_PAGE", 20)
 
     # GitHub Repository URL
-    GITHUB_REPO = "https://github.com/myles/myles.photo"
+    GITHUB_REPO_URL = environ.get(
+        "GITHUB_REPO_URL", "https://github.com/myles/myles.photo"
+    )
 
     # Paths
     APP_PATH = Path(__file__).parents[0]
     ROOT_PATH = Path(__file__).parents[1]
 
-    STATIC_PATH = ROOT_PATH.joinpath("static")
+    STATIC_PATH = environ.get("STATIC_PATH", APP_PATH / "static")
+    TEMPLATE_PATH = environ.get("TEMPLATE_PATH", APP_PATH / "templates")
 
-    GALLERIES_PATH = ROOT_PATH.joinpath("tests/fixtures")
+    GALLERIES_PATH = environ.get(
+        "GALLERIES_PATH", ROOT_PATH.joinpath("tests/fixtures")
+    )
 
     # Frozen-Flask Config
     # FREEZER_STATIC_IGNORE = ()
-    FREEZER_DESTINATION = ROOT_PATH.joinpath("build")
+    FREEZER_DESTINATION = environ.get("BUILD_DIR", ROOT_PATH.joinpath("build"))
+
+
+config = Config()

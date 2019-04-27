@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-goldlinq = {path = "."}
+goldlinq = {editable = true,path = "."}
 python-dotenv = "*"
 
 [dev-packages]
@@ -26,3 +26,8 @@ python_version = "3.7"
 
 [pipenv]
 allow_prereleases = true
+
+[scripts]
+fix_lint = "black -l 80 goldlinq/ tests/"
+lint = "flake8"
+test = "pytest --cov"
