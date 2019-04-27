@@ -27,7 +27,7 @@ class Photo(Model):
     h_type = "h-entry"
 
     @property
-    def gallery(self) -> Gallery:
+    def gallery(self) -> "Gallery":
         return Gallery.parse(self.path.parents[1])
 
     @classmethod
