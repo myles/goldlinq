@@ -3,7 +3,7 @@ from pathlib import Path
 import pytest
 
 from goldlinq.models import microformats2
-from goldlinq.models.core import Photo, Gallery
+from goldlinq.models.core import Gallery, Photo
 
 FIXTURE_PATH = Path(__file__).parents[1].joinpath("fixtures")
 

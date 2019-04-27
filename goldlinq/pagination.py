@@ -1,6 +1,5 @@
 import collections
 import warnings
-from exceptions import Exception, RuntimeWarning
 from math import ceil
 
 

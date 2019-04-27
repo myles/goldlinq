@@ -4,7 +4,7 @@ class HObject:
     h_type = None
 
     @classmethod
-    def parse(cls, data):
+    def parse(cls, data: dict) -> "HObject":
         model = cls()
 
         for key, value in data.items():
@@ -12,7 +12,7 @@ class HObject:
 
         return model
 
-    def to_h_object(self):
+    def to_h_object(self) -> dict:
         h_object = {"type": self.h_type, "properties": {}}
 
         for key, value in self.__dict__.items():

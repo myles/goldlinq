@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from goldlinq.models.microformats2 import HGeo, HAdr, HCard, HEvent, HObject
+from goldlinq.models.microformats2 import HAdr, HCard, HEvent, HGeo, HObject
 
 
 @pytest.fixture

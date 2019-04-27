@@ -1,4 +1,5 @@
 from pathlib import Path
+from typing import Union
 
 from .microformats2 import HAdr, HCard, HEvent, HGeo
 
@@ -10,16 +11,18 @@ class ResultSet(list):
         super(ResultSet, self).__init__()
 
     @property
-    def paths(self):
+    def paths(self) -> list:
         """Returns a list of paths of the posts."""
         return [item.path for item in self if hasattr(item, "path")]
 
     @property
-    def names(self):
+    def names(self) -> list:
         """Return a list of names of the posts."""
         return [item.name for item in self if hasattr(item, "name")]
 
-    def order_by(self, field_name="dt_taken", direction="descending"):
+    def order_by(
+        self, field_name: str = "dt_taken", direction: str = "descending"
+    ):
         """
         Order the results by a field.
 
@@ -32,11 +35,12 @@ class ResultSet(list):
         direction : { 'descending', 'ascending' }
             what direction do you want to order by
         """
-        if not direction:
-            reverse = False
-        elif direction.startswith("desc"):
+        reverse = False
+
+        if direction.startswith("desc"):
             reverse = True
-        elif direction.startswith("asc"):
+
+        if direction.startswith("asc"):
             reverse = False
 
         return self.sort(key=lambda x: getattr(x, field_name), reverse=reverse)
@@ -46,29 +50,29 @@ class Model:
     name = None
     h_type = None
 
-    def __init__(self, path):
+    def __init__(self, path: Path):
         super(Model, self).__init__()
 
         self.path = Path(path)
 
-    def __str__(self):
+    def __str__(self) -> str:
         if self.name:
             return self.name
 
     @property
-    def url(self):
+    def url(self) -> str:
         raise NotImplementedError
 
     @classmethod
-    def parse(cls, path):
+    def parse(cls, path: Path):
         raise NotImplementedError
 
     @classmethod
-    def parse_directory(cls, path):
+    def parse_directory(cls, path: Path):
         raise NotImplementedError
 
     @staticmethod
-    def parse_location(data):
+    def parse_location(data: dict) -> Union[HGeo, HAdr, HCard]:
         if not data.get("type"):
             raise ValueError
 
@@ -80,10 +84,10 @@ class Model:
             return HCard.parse(data)
 
     @staticmethod
-    def parse_event(data):
+    def parse_event(data: dict) -> HEvent:
         return HEvent.parse(data)
 
-    def to_h_object(self):
+    def to_h_object(self) -> dict:
         h_object = {"type": self.h_type, "properties": {}}
 
         for key, value in self.__dict__.items():

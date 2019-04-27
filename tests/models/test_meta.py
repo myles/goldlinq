@@ -1,7 +1,8 @@
-import pytest
 from pathlib import PosixPath
 
-from goldlinq.models.meta import ResultSet, Model
+import pytest
+
+from goldlinq.models.meta import Model, ResultSet
 
 
 @pytest.fixture

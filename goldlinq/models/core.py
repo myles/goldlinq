@@ -27,11 +27,11 @@ class Photo(Model):
     h_type = "h-entry"
 
     @property
-    def gallery(self):
+    def gallery(self) -> Gallery:
         return Gallery.parse(self.path.parents[1])
 
     @classmethod
-    def parse(cls, path):
+    def parse(cls, path: Path) -> "Photo":
         path = Path(path)
         photo = cls(path)
 
@@ -54,7 +54,7 @@ class Photo(Model):
         return photo
 
     @classmethod
-    def parse_directory(cls, path):
+    def parse_directory(cls, path: Path) -> ResultSet:
         results = ResultSet()
         path = Path(path)
 
@@ -78,11 +78,11 @@ class Gallery(Model):
     h_type = "h-feed"
 
     @property
-    def url(self):
+    def url(self) -> str:
         return url_for("views.gallery_detail", gallery_slug=self.slug)
 
     @classmethod
-    def parse(cls, path):
+    def parse(cls, path: Path) -> "Gallery":
         gallery_path = Path(path)
         meta_file_path = Path(path).joinpath("meta.toml")
         content_file_path = Path(path).joinpath("content.md")
@@ -124,7 +124,7 @@ class Gallery(Model):
         return gallery
 
     @classmethod
-    def parse_directory(cls, path):
+    def parse_directory(cls, path: Path) -> ResultSet:
         results = ResultSet()
         path = Path(path)
 
@@ -133,13 +133,13 @@ class Gallery(Model):
 
         return results
 
-    def list_photo(self):
+    def list_photo(self) -> list:
         return Photo.parse_directory(self.path.joinpath("photos"))
 
-    def get_photo(self, photo):
+    def get_photo(self, photo: Path) -> Photo:
         return Photo.parse(self.path.joinpath("photos/", photo))
 
-    def to_h_object(self):
+    def to_h_object(self) -> dict:
         h_object = super(Gallery, self).to_h_object()
 
         h_object["items"] = [x.to_h_object() for x in self.list_photo()]
