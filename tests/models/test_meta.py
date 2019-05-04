@@ -1,4 +1,5 @@
 from pathlib import PosixPath
+from collections import Counter
 
 import pytest
 
@@ -52,6 +53,14 @@ def test_result_set_order_by(result_set):
 
     result_set.order_by("name", direction="ascending")
     assert result_set.names == ["A", "B", "C"]
+
+
+def test_result_set_loop(result_set):
+    assert len(result_set) == 3
+
+    assert result_set[0].name == "A"
+
+    assert Counter([r.name for r in result_set]) == Counter(["A", "B", "C"])
 
 
 def test_model___str__(model):
