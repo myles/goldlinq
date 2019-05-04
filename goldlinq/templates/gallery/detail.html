@@ -1,1 +1,15 @@
 {% extends "base_site.html" %}
+
+{% block body %}
+    <h1>{{ gallery.name }}</h1>
+
+    <ul>
+        {% for photo in gallery.list_photo() %}
+            <li>
+                <a href="{{ photo.url }}">
+                    {{ photo.name }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

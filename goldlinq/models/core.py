@@ -27,6 +27,14 @@ class Photo(Model):
     h_type = "h-entry"
 
     @property
+    def url(self) -> str:
+        return url_for(
+            "views.photo_detail",
+            gallery_slug=self.gallery.id,
+            photo_slug=self.id
+        )
+
+    @property
     def gallery(self) -> "Gallery":
         return Gallery.parse(self.path.parents[1])
 
@@ -40,6 +48,8 @@ class Photo(Model):
 
         with path.open() as file_obj:
             meta = toml.loads(file_obj.read())
+
+        meta["id"] = path.name.replace(".toml", "")
 
         for key, value in meta.items():
             if key == "location":
@@ -79,7 +89,7 @@ class Gallery(Model):
 
     @property
     def url(self) -> str:
-        return url_for("views.gallery_detail", gallery_slug=self.slug)
+        return url_for("views.gallery_detail", gallery_slug=self.id)
 
     @classmethod
     def parse(cls, path: Path) -> "Gallery":
@@ -96,6 +106,8 @@ class Gallery(Model):
             meta = toml.loads(meta_file_obj.read())
 
         gallery_folder_regex = GALLERY_FOLDER_REGEX.match(gallery_path.name)
+
+        meta["id"] = gallery_path.name
 
         if not meta.get("dt_published"):
             dt_published = datetime.datetime.fromisoformat(
@@ -133,11 +145,11 @@ class Gallery(Model):
 
         return results
 
-    def list_photo(self) -> list:
+    def list_photo(self) -> ResultSet:
         return Photo.parse_directory(self.path.joinpath("photos"))
 
-    def get_photo(self, photo: Path) -> Photo:
-        return Photo.parse(self.path.joinpath("photos/", photo))
+    def get_photo(self, photo_id: str) -> Photo:
+        return Photo.parse(self.path.joinpath("photos/", f"{photo_id}.toml"))
 
     def to_h_object(self) -> dict:
         h_object = super(Gallery, self).to_h_object()

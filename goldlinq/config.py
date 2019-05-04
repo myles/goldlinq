@@ -8,7 +8,10 @@ class Config:
     DEBUG = environ.get("DEBUG", True)
     SEND_FILE_MAX_AGE_DEFAULT = 0
 
+    # Site Config
     PER_PAGE = environ.get("PRE_PAGE", 20)
+    SITE_TITLE = environ.get("SITE_TITLE", "Goldinq")
+    DATETIME_FORMAT = environ.get("DATETIME_FORMAT", "%-d %B %Y, %-I:%M %p")
 
     # GitHub Repository URL
     GITHUB_REPO_URL = environ.get(

@@ -1,1 +1,14 @@
 {% extends "base_site.html" %}
+
+{% block body %}
+    <ul>
+        {% for gallery in gallery_list -%}
+            <li id="{{ gallery.id }}">
+                <a href="{{ gallery.url }}">
+                    {{ gallery.name }}
+                </a> &bull;
+                {{ gallery.dt_published.strftime(config.DATETIME_FORMAT) }}
+            </li>
+        {%- endfor %}
+    </ul>
+{% endblock %}
